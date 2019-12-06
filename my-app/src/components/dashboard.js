@@ -15,28 +15,28 @@ import React from 'react';
  const Dashboard = (props) => {
 
     return(
-          <section className='buttons'>
+          <section className='buttons' data-testid='buttons'>
 
             <div className='strike-button'>
-                <button onClick={props.handleStrike}>
+                <button data-testid='strike-button' onClick={props.handleStrike}>
                     Strike
                 </button>
             </div>
 
             <div className='ball-button'>
-                <button onClick={props.handleBalls}>
+                <button data-testid='ball-button' onClick={props.handleBalls}>
                     Ball
                 </button>
             </div>
 
             <div className='foul-button'>
-                <button onClick={props.handleFoul}>
+                <button data-testid='foul-button' onClick={props.handleFoul}>
                     Foul
                 </button>
             </div>
 
             <div className='hit-button'>
-                <button onClick={props.handleHit}>
+                <button data-testid='hit-button' onClick={props.handleHit}>
                     Hit
                 </button>
             </div>
